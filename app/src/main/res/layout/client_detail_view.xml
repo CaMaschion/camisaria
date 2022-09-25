@@ -1,34 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/TextAppearance.AppCompat"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_dark_blue"
-    android:elevation="@dimen/dimen_12"
     android:orientation="vertical"
-    android:padding="@dimen/dimen_24">
+    app:cardBackgroundColor="@color/mid_blue"
+    app:cardElevation="@dimen/dimen_12">
 
-    <TextView
-        android:id="@+id/text_repository"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/repository_name"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:padding="@dimen/dimen_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/rep_github"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_repository" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/client_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/client_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date_service_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date_service"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="12/12/2011"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBaselineOf="@+id/date_service_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/date_service_text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/local_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/local_service"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_service" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
