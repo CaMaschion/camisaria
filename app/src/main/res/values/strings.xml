@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">camisaria</string>
+    <string name="repository_name">client_name</string>
 </resources>
