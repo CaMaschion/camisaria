@@ -8,7 +8,9 @@ class Client(
     var birthday: Date,
     var email: String,
     var phone: String,
-    var address: String
+    var address: String,
+    var serviceDate: String,
+    var localDate: String
 ) {
     lateinit var shirtList : ArrayList<Shirt>
 
