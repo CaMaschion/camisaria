@@ -52,11 +52,13 @@ dependencies {
     androidTestImplementation "androidx.room:room-testing:2.4.3"
 
     //navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:2.5.1"
-    implementation "androidx.navigation:navigation-ui-ktx:2.5.1"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
 
     // recyclerview
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     // for adding cardview
     implementation 'androidx.cardview:cardview:1.0.0'
+
+    
 }
