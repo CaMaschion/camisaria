@@ -10,6 +10,8 @@ import com.maschion.camisaria.databinding.ResItemClientInfoViewBinding
 class ClientAdapter(
     private val clientItem: List<ClientItem>,
     private val onClick: (ClientItem) ->
+    Unit,
+    private val onClickDelete: (ClientItem) ->
     Unit
 ) : RecyclerView.Adapter<ClientAdapter.ViewHolder>() {
 

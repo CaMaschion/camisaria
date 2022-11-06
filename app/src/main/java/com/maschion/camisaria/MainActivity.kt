@@ -16,29 +16,34 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val installSplashScreen = installSplashScreen()
-
+        installSplashScreen()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // getting the recyclerview by its id
         val recyclerview = binding.recyclerview
 
-        // this creates a vertical layout Manager
         recyclerview.layoutManager = LinearLayoutManager(this)
 
-        // ArrayList of class ItemsViewModel
         val data = mutableListOf<ClientItem>()
 
         for (i in 1..20) {
-            data.add(ClientItem(name = "Leo Onardo", date = Date(10/10/1100), local = "Sao Paulo"))
+            data.add(
+                ClientItem(
+                    name = "Leo Onardo",
+                    date = Date(10 / 10 / 2022),
+                    local = "Sao Paulo"
+                )
+            )
         }
 
-        // Setting the Adapter with the recyclerview
-        binding.recyclerview.adapter = ClientAdapter(data) {
-            Toast.makeText(this,"click", Toast.LENGTH_LONG).show()
-        }
-
+        binding.recyclerview.adapter = ClientAdapter(
+            data,
+            {
+                Toast.makeText(this, "click", Toast.LENGTH_LONG).show()
+            },
+            {//delete
+            }
+        )
     }
 }
