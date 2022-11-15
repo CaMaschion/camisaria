@@ -25,6 +25,19 @@ class MainActivity : AppCompatActivity() {
 
         recyclerview.layoutManager = LinearLayoutManager(this)
 
+        val data = getData()
+
+        binding.recyclerview.adapter = ClientAdapter(
+            data,
+            {
+                Toast.makeText(this, "click", Toast.LENGTH_LONG).show()
+            },
+            {//delete
+            }
+        )
+    }
+
+    private fun getData(): MutableList<ClientItem> {
         val data = mutableListOf<ClientItem>()
 
         for (i in 1..20) {
@@ -36,14 +49,6 @@ class MainActivity : AppCompatActivity() {
                 )
             )
         }
-
-        binding.recyclerview.adapter = ClientAdapter(
-            data,
-            {
-                Toast.makeText(this, "click", Toast.LENGTH_LONG).show()
-            },
-            {//delete
-            }
-        )
+        return data
     }
 }
