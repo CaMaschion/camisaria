@@ -3,4 +3,5 @@
     <string name="client_name">Leo Onardo</string>
     <string name="date_service">Data de atendimento:</string>
     <string name="local_service">São Paulo</string>
+    <string name="btn_add_client">botão para adicionar novo cliente</string>
 </resources>

@@ -3,15 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:itemCount="5"
-        tools:listitem="@layout/client_detail_view" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:context=".MainActivity"
+        tools:listitem="@layout/res_item_client_info_view" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_24"
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/light_purple"
+        android:clickable="true"
+        android:contentDescription="@string/btn_add_client"
+        android:elevation="@dimen/dimen_5"
+        android:focusable="true"
+        android:src="@drawable/ic_add"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
