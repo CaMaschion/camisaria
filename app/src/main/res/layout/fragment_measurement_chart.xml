@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
     <TextView
@@ -21,19 +22,19 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintTop_toTopOf="@+id/add" />
 
     <EditText
         android:id="@+id/editTextMeasure"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/editTexAdd"
         app:layout_constraintEnd_toStartOf="@+id/editTexAdd"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/measures" />
+        app:layout_constraintTop_toTopOf="@+id/editTexAdd" />
 
     <TextView
         android:id="@+id/add"
@@ -49,7 +50,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editTexAdd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/measures" />
 
     <EditText
