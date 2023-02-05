@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.maschion.camisaria.databinding.ActivityMainBinding
 import com.maschion.camisaria.ui.HomeFragment
 
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
-                add<HomeFragment>(R.id.fragmentContainerView)
+                replace<HomeFragment>(R.id.fragmentContainerView)
             }
 
         }
