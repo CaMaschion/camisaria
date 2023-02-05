@@ -6,29 +6,10 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <TextView
-        android:id="@+id/measures"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_12"
-        android:layout_marginEnd="@dimen/dimen_16"
-        android:fontFamily="serif"
-        android:text="medidas"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/add"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
     <EditText
         android:id="@+id/editTextMeasure"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="@dimen/dimen_24"
         android:layout_marginStart="@dimen/dimen_16"
         android:layout_marginEnd="@dimen/dimen_16"
         android:background="@drawable/custom_measure_input"
@@ -36,33 +17,18 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/editTexAdd"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/measures" />
-
-    <TextView
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/dimen_12"
-        android:fontFamily="serif"
-        android:text="acréscimos"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toTopOf="@+id/editTexAdd" />
 
     <EditText
         android:id="@+id/editTexAdd"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="@dimen/dimen_24"
         android:background="@drawable/custom_measure_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editTextMeasure"
-        app:layout_constraintTop_toBottomOf="@+id/add"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="149dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

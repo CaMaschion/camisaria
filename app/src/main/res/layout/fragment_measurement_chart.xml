@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <com.maschion.camisaria.widget.HeaderComponent
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <com.maschion.camisaria.widget.InputMeasureClientCustomView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

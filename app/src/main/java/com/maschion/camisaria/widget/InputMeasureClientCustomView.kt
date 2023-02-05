@@ -16,10 +16,10 @@ class InputMeasureClientCustomView (context: Context, attrs: AttributeSet
         LayoutInflater.from(context), this, true
     )
 
-    init {
-        layoutParams = LayoutParams(MATCH_PARENT, WRAP_CONTENT)
-        inflate(context, R.layout.measurement_chart_customview, this)
-    }
+//    init {
+//        layoutParams = LayoutParams(MATCH_PARENT, WRAP_CONTENT)
+//        inflate(context, R.layout.measurement_chart_customview, this)
+//    }
 
 
 }
