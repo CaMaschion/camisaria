@@ -1,6 +1,5 @@
 package com.maschion.camisaria.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.maschion.camisaria.R
 import com.maschion.camisaria.adapter.ClientAdapter
@@ -51,7 +51,7 @@ class HomeFragment : Fragment() {
         binding.addClient.setOnClickListener {
             parentFragmentManager.commit {
                 setReorderingAllowed(true)
-                add<MeasureFragment>(R.id.fragmentContainerView)
+                replace<MeasurementChartFragment>(R.id.fragmentContainerView)
                 addToBackStack(null)
             }
         }
