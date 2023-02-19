@@ -15,7 +15,7 @@ data class Measure(
     var leftFist: Double,
     var elbowHeight: Double,
     var bodyHeight: Double,
-    var armhole: Double,
+    var armpits: Double,
 )  {
     override fun toString(): String = collar.toString() + shoulder.toString()
 }

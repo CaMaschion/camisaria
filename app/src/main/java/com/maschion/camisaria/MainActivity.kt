@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         installSplashScreen()
 
+
         if (savedInstanceState == null) {
 
             supportFragmentManager.commit {

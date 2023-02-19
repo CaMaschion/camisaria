@@ -4,4 +4,22 @@
     <string name="date_service">Data de atendimento:</string>
     <string name="local_service">São Paulo</string>
     <string name="btn_add_client">botão para adicionar novo cliente</string>
+
+    <string name="collarTextMeasure">Colarinho</string>
+    <string name="shoulderTextMeasure">Ombro</string>
+    <string name="betweenShoulderTextMeasure">Pala</string>
+    <string name="chestTextMeasure">Circunferência tórax</string>
+    <string name="waistTextMeasure">Circunferência cintura</string>
+    <string name="hipTextMeasure">Quadril</string>
+    <string name="totalLengthTextMeasure">Comprimento total</string>
+    <string name="bottomHeightTextMeasure">Altura do botão </string>
+    <string name="bicepsTextMeasure">Biceps</string>
+    <string name="forearmTextMeasure">Antebraço</string>
+    <string name="shirtSleeveTextMeasure">Comprimento manga</string>
+    <string name="rightFistTextMeasure">Punho direito</string>
+    <string name="leftFistTextMeasure">Punho esquerdo</string>
+    <string name="elbowHeightTextMeasure">Altura do cotovelo</string>
+    <string name="bodyHeightTextMeasure">Altura do corpo</string>
+    <string name="armpitsTextMeasure">Entracavas</string>
+
 </resources>

@@ -36,18 +36,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="105dp" />
+        app:layout_constraintGuide_begin="137dp" />
 
     <TextView
         android:id="@+id/measures_chart"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_24"
-        android:layout_marginEnd="16dp"
         android:fontFamily="serif"
-        android:text="Colarinho"
+        android:padding="@dimen/dimen_10"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/editTextMeasure"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
