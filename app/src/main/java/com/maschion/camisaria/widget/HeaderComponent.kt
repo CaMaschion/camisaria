@@ -11,4 +11,6 @@ class HeaderComponent (context: Context, attrs: AttributeSet) : LinearLayout(con
     private val binding: ComponentHeaderBinding = ComponentHeaderBinding.inflate(
         LayoutInflater.from(context), this, true
     )
+
+
 }

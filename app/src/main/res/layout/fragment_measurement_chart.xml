@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <com.maschion.camisaria.widget.HeaderComponent
@@ -11,17 +11,55 @@
 
     <com.maschion.camisaria.widget.InputMeasureClientCustomView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_10"/>
+        android:layout_height="wrap_content"/>
 
     <com.maschion.camisaria.widget.InputMeasureClientCustomView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_10"/>
+        android:layout_height="wrap_content"/>
 
     <com.maschion.camisaria.widget.InputMeasureClientCustomView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_10"/>
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

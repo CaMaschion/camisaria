@@ -15,6 +15,7 @@
         android:background="@drawable/custom_measure_input"
         android:inputType="textPersonName"
         android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/editTexAdd"
         app:layout_constraintEnd_toStartOf="@+id/editTexAdd"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/editTexAdd" />
@@ -23,12 +24,12 @@
         android:id="@+id/editTexAdd"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dimen_16"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_measure_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editTextMeasure"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="149dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -38,7 +39,7 @@
         app:layout_constraintGuide_begin="105dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/measures_chart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_24"
@@ -51,12 +52,5 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editTextMeasure" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="98dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
