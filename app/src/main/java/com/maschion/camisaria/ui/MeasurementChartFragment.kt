@@ -31,22 +31,24 @@ class MeasurementChartFragment : Fragment() {
 
         viewModel = ViewModelProvider(this)[ShirtViewModel::class.java]
 
-        binding.collarTextView.setMeasureText(getString(R.string.collarTextMeasure))
-        binding.shoulderTextView.setMeasureText(getString(R.string.shoulderTextMeasure))
-        binding.betweenShoulderTextView.setMeasureText(getString(R.string.betweenShoulderTextMeasure))
-        binding.chestTextView.setMeasureText(getString(R.string.chestTextMeasure))
-        binding.waistTextView.setMeasureText(getString(R.string.waistTextMeasure))
-        binding.hipTextView.setMeasureText(getString(R.string.hipTextMeasure))
-        binding.totalLengthTextView.setMeasureText(getString(R.string.totalLengthTextMeasure))
-        binding.bottomHeightTextView.setMeasureText(getString(R.string.bottomHeightTextMeasure))
-        binding.bicepsTextView.setMeasureText(getString(R.string.bicepsTextMeasure))
-        binding.forearmTextView.setMeasureText(getString(R.string.forearmTextMeasure))
-        binding.shirtSleeveTextView.setMeasureText(getString(R.string.shirtSleeveTextMeasure))
-        binding.rightFistTextView.setMeasureText(getString(R.string.rightFistTextMeasure))
-        binding.leftFistTextView.setMeasureText(getString(R.string.leftFistTextMeasure))
-        binding.elbowHeightTextView.setMeasureText(getString(R.string.elbowHeightTextMeasure))
-        binding.bodyHeightTextView.setMeasureText(getString(R.string.bodyHeightTextMeasure))
-        binding.armpitsTextView.setMeasureText(getString(R.string.armpitsTextMeasure))
+        binding.apply {
+            collarTextView.setMeasureText(getString(R.string.collarTextMeasure))
+            shoulderTextView.setMeasureText(getString(R.string.shoulderTextMeasure))
+            betweenShoulderTextView.setMeasureText(getString(R.string.betweenShoulderTextMeasure))
+            chestTextView.setMeasureText(getString(R.string.chestTextMeasure))
+            waistTextView.setMeasureText(getString(R.string.waistTextMeasure))
+            hipTextView.setMeasureText(getString(R.string.hipTextMeasure))
+            totalLengthTextView.setMeasureText(getString(R.string.totalLengthTextMeasure))
+            bottomHeightTextView.setMeasureText(getString(R.string.bottomHeightTextMeasure))
+            bicepsTextView.setMeasureText(getString(R.string.bicepsTextMeasure))
+            forearmTextView.setMeasureText(getString(R.string.forearmTextMeasure))
+            shirtSleeveTextView.setMeasureText(getString(R.string.shirtSleeveTextMeasure))
+            rightFistTextView.setMeasureText(getString(R.string.rightFistTextMeasure))
+            leftFistTextView.setMeasureText(getString(R.string.leftFistTextMeasure))
+            elbowHeightTextView.setMeasureText(getString(R.string.elbowHeightTextMeasure))
+            bodyHeightTextView.setMeasureText(getString(R.string.bodyHeightTextMeasure))
+            armpitsTextView.setMeasureText(getString(R.string.armpitsTextMeasure))
+        }
 
     }
 
