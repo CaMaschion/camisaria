@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="InputMeasureClientCustomView">
+
+        <attr name="measureText" format="string"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="HeaderComponent">
+
+        <attr name="measureHeaderText" format="string"/>
+        <attr name="addMeasureHeaderText" format="string"/>
+        <attr name="bold" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>

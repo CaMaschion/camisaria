@@ -1,86 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/measures"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="serif"
-        android:text="medidas"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/add"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        tools:layout_editor_absoluteY="32dp" />
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextMeasure"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/editTexAdd"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/measures" />
+        <com.maschion.camisaria.widget.HeaderComponent
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="serif"
-        android:text="acréscimos"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTexAdd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/measures" />
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/collarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/editTexAdd"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextMeasure"
-        tools:layout_editor_absoluteY="72dp" />
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/shoulderTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="105dp" />
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/betweenShoulderTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="serif"
-        android:text="Colarinho"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextMeasure"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextMeasure" />
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/chestTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/waistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/hipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/totalLengthTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/bottomHeightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/bicepsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/forearmTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/shirtSleeveTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/rightFistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/leftFistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/elbowHeightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/bodyHeightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+            android:id="@+id/armpitsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

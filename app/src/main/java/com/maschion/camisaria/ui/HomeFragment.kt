@@ -6,7 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.maschion.camisaria.R
 import com.maschion.camisaria.adapter.ClientAdapter
 import com.maschion.camisaria.data.model.ClientItem
 import com.maschion.camisaria.databinding.FragmentHomeBinding
@@ -15,7 +19,6 @@ import java.util.*
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,6 +47,14 @@ class HomeFragment : Fragment() {
             {//delete
             }
         )
+
+        binding.addClient.setOnClickListener {
+            parentFragmentManager.commit {
+                setReorderingAllowed(true)
+                replace<MeasurementChartFragment>(R.id.fragmentContainerView)
+                addToBackStack(null)
+            }
+        }
     }
 
     private fun getData(): MutableList<ClientItem> {
@@ -60,5 +71,4 @@ class HomeFragment : Fragment() {
         }
         return data
     }
-
 }
