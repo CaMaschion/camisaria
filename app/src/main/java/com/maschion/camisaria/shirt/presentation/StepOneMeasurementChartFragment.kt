@@ -1,4 +1,4 @@
-package com.maschion.camisaria.ui
+package com.maschion.camisaria.shirt.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,14 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.maschion.camisaria.R
 import com.maschion.camisaria.databinding.FragmentMeasurementChartBinding
-import com.maschion.camisaria.viewmodel.ShirtViewModel
-import kotlinx.android.synthetic.main.fragment_measurement_chart.*
+import com.maschion.camisaria.shirt.data.ShirtRepository
+import com.maschion.camisaria.shirt.viewmodel.StepOneMeasurementChartViewModel
+import com.maschion.camisaria.shirt.viewmodel.StepOneMeasurementChartViewModelFactory
 
-class MeasurementChartFragment : Fragment() {
+class StepOneMeasurementChartFragment : Fragment() {
 
     private lateinit var binding: FragmentMeasurementChartBinding
-    private lateinit var viewModel: ShirtViewModel
+    private lateinit var viewModel: StepOneMeasurementChartViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,7 +30,11 @@ class MeasurementChartFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this)[ShirtViewModel::class.java]
+        viewModel = ViewModelProvider(
+            this, StepOneMeasurementChartViewModelFactory(
+                ShirtRepository()
+            )
+        )[StepOneMeasurementChartViewModel::class.java]
 
         binding.apply {
             collarTextView.setMeasureText(getString(R.string.collarTextMeasure))

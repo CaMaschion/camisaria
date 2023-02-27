@@ -1,4 +1,4 @@
-package com.maschion.camisaria.ui
+package com.maschion.camisaria.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.maschion.camisaria.R
-import com.maschion.camisaria.adapter.ClientAdapter
-import com.maschion.camisaria.data.model.ClientItem
+import com.maschion.camisaria.client.adapter.ClientAdapter
+import com.maschion.camisaria.client.model.ClientItem
 import com.maschion.camisaria.databinding.FragmentHomeBinding
+import com.maschion.camisaria.shirt.presentation.StepOneMeasurementChartFragment
 import java.util.*
 
 class HomeFragment : Fragment() {
@@ -51,7 +51,7 @@ class HomeFragment : Fragment() {
         binding.addClient.setOnClickListener {
             parentFragmentManager.commit {
                 setReorderingAllowed(true)
-                replace<MeasurementChartFragment>(R.id.fragmentContainerView)
+                replace<StepOneMeasurementChartFragment>(R.id.fragmentContainerView)
                 addToBackStack(null)
             }
         }

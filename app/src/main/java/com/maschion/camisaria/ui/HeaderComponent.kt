@@ -1,4 +1,4 @@
-package com.maschion.camisaria.widget
+package com.maschion.camisaria.ui
 
 import android.content.Context
 import android.util.AttributeSet

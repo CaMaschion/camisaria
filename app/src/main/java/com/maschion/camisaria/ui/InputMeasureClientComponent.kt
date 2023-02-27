@@ -1,16 +1,15 @@
-package com.maschion.camisaria.widget
+package com.maschion.camisaria.ui
 
 import android.content.Context
+import android.text.Editable
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.view.ViewGroup.LayoutParams.MATCH_PARENT
-import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
+import android.widget.EditText
 import android.widget.LinearLayout
-import androidx.constraintlayout.widget.ConstraintLayout
 import com.maschion.camisaria.R
 import com.maschion.camisaria.databinding.MeasurementChartCustomviewBinding
 
-class InputMeasureClientCustomView(
+class InputMeasureClientComponent(
     context: Context, attrs: AttributeSet
 ) : LinearLayout(context, attrs) {
 
@@ -30,6 +29,14 @@ class InputMeasureClientCustomView(
 
     fun setMeasureText(measure: String) {
         this.binding.measuresChart.text = measure
+    }
+
+    fun getEditMeasureText() {
+        this.binding.editTextMeasure.text.toString()
+    }
+
+    fun getEditExtraMeasureText() {
+        this.binding.editTexAdd.text.toString()
     }
 
 }

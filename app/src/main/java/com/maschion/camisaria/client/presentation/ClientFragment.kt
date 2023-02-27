@@ -6,7 +6,7 @@
 //import androidx.recyclerview.widget.LinearLayoutManager
 //import androidx.recyclerview.widget.RecyclerView
 //import com.maschion.camisaria.R
-//import com.maschion.camisaria.adapter.CustomAdapter
+//import com.maschion.camisaria.client.adapter.CustomAdapter
 //
 //class ClientFragment : Fragment(R.layout.client_fragment_recycler_view) {
 //

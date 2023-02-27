@@ -1,5 +1,6 @@
-package com.maschion.camisaria.data.model
+package com.maschion.camisaria.client.model
 
+import com.maschion.camisaria.shirt.model.Shirt
 import java.util.*
 import kotlin.collections.ArrayList
 
