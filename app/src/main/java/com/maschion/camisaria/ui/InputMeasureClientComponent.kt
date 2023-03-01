@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.EditText
 import android.widget.LinearLayout
+import androidx.core.widget.addTextChangedListener
 import com.maschion.camisaria.R
 import com.maschion.camisaria.databinding.MeasurementChartCustomviewBinding
 
@@ -19,7 +20,6 @@ class InputMeasureClientComponent(
         )
 
     init {
-
         context.obtainStyledAttributes(attrs, R.styleable.InputMeasureClientCustomView).apply {
             binding.measuresChart.text =
                 getString(R.styleable.InputMeasureClientCustomView_measureText)
@@ -27,16 +27,23 @@ class InputMeasureClientComponent(
 
     }
 
-    fun setMeasureText(measure: String) {
-        this.binding.measuresChart.text = measure
+    fun addListener(measureCallback: (String) -> Unit, extraMeasureCallback: (String) -> Unit){
+
+        this.binding.editTextMeasure.addTextChangedListener {
+            measureCallback(it.toString())
+        }
+
+        this.binding.editTexAdd.addTextChangedListener {
+            extraMeasureCallback(it.toString())
+        }
+
     }
 
-    fun getEditMeasureText() {
-        this.binding.editTextMeasure.text.toString()
-    }
+    fun setupCustomView(label: String, measure: String, extraMeasure: String) {
+        this.binding.measuresChart.text = label
+        this.binding.editTextMeasure.setText(measure)
+        this.binding.editTexAdd.setText(extraMeasure)
 
-    fun getEditExtraMeasureText() {
-        this.binding.editTexAdd.text.toString()
     }
 
 }

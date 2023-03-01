@@ -37,23 +37,30 @@ class StepOneMeasurementChartFragment : Fragment() {
         )[StepOneMeasurementChartViewModel::class.java]
 
         binding.apply {
-            collarTextView.setMeasureText(getString(R.string.collarTextMeasure))
-            shoulderTextView.setMeasureText(getString(R.string.shoulderTextMeasure))
-            betweenShoulderTextView.setMeasureText(getString(R.string.betweenShoulderTextMeasure))
-            chestTextView.setMeasureText(getString(R.string.chestTextMeasure))
-            waistTextView.setMeasureText(getString(R.string.waistTextMeasure))
-            hipTextView.setMeasureText(getString(R.string.hipTextMeasure))
-            totalLengthTextView.setMeasureText(getString(R.string.totalLengthTextMeasure))
-            bottomHeightTextView.setMeasureText(getString(R.string.bottomHeightTextMeasure))
-            bicepsTextView.setMeasureText(getString(R.string.bicepsTextMeasure))
-            forearmTextView.setMeasureText(getString(R.string.forearmTextMeasure))
-            shirtSleeveTextView.setMeasureText(getString(R.string.shirtSleeveTextMeasure))
-            rightFistTextView.setMeasureText(getString(R.string.rightFistTextMeasure))
-            leftFistTextView.setMeasureText(getString(R.string.leftFistTextMeasure))
-            elbowHeightTextView.setMeasureText(getString(R.string.elbowHeightTextMeasure))
-            bodyHeightTextView.setMeasureText(getString(R.string.bodyHeightTextMeasure))
-            armpitsTextView.setMeasureText(getString(R.string.armpitsTextMeasure))
+//            collarTextView.setupCustomView(getString(R.string.collarTextMeasure), "123", "456")
+            collarTextView.addListener({
+                println("camilaaaaa $it")
+            }, {
+                println("camilaaaaa $it")
+            })
+
+//            shoulderTextView.setupCustomView(getString(R.string.shoulderTextMeasure))
+//            betweenShoulderTextView.setupCustomView(getString(R.string.betweenShoulderTextMeasure))
+//            chestTextView.setupCustomView(getString(R.string.chestTextMeasure))
+//            waistTextView.setupCustomView(getString(R.string.waistTextMeasure))
+//            hipTextView.setupCustomView(getString(R.string.hipTextMeasure))
+//            totalLengthTextView.setupCustomView(getString(R.string.totalLengthTextMeasure))
+//            bottomHeightTextView.setupCustomView(getString(R.string.bottomHeightTextMeasure))
+//            bicepsTextView.setupCustomView(getString(R.string.bicepsTextMeasure))
+//            forearmTextView.setupCustomView(getString(R.string.forearmTextMeasure))
+//            shirtSleeveTextView.setupCustomView(getString(R.string.shirtSleeveTextMeasure))
+//            rightFistTextView.setupCustomView(getString(R.string.rightFistTextMeasure))
+//            leftFistTextView.setupCustomView(getString(R.string.leftFistTextMeasure))
+//            elbowHeightTextView.setupCustomView(getString(R.string.elbowHeightTextMeasure))
+//            bodyHeightTextView.setupCustomView(getString(R.string.bodyHeightTextMeasure))
+//            armpitsTextView.setupCustomView(getString(R.string.armpitsTextMeasure))
         }
+
 
     }
 

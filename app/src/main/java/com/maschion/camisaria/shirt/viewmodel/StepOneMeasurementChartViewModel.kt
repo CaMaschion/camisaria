@@ -10,16 +10,14 @@ class StepOneMeasurementChartViewModel constructor(
     private val repository: ShirtRepository
 ) : ViewModel() {
 
-    private val _shirt = MutableLiveData<Shirt>()
-    private val shirt: LiveData<Shirt> get() = _shirt
+    val shirt = MutableLiveData<Shirt>()
 
+    fun getMeasure(measure: String){
+        shirt.value.apply {
 
-    private fun save() {
-        shirt.value?.let { repository.save(it) }
+        }
     }
 
-    fun saveShirtEvent() {
 
-    }
 
 }
