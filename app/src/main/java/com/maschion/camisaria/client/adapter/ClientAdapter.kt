@@ -1,10 +1,10 @@
-package com.maschion.camisaria.adapter
+package com.maschion.camisaria.client.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.maschion.camisaria.data.model.ClientItem
+import com.maschion.camisaria.client.model.ClientItem
 import com.maschion.camisaria.databinding.ResItemClientInfoViewBinding
 
 class ClientAdapter(

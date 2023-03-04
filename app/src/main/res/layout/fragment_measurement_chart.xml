@@ -10,87 +10,87 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.maschion.camisaria.widget.HeaderComponent
+        <com.maschion.camisaria.ui.HeaderComponent
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/collarTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/shoulderTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/betweenShoulderTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/chestTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/waistTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/hipTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/totalLengthTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/bottomHeightTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/bicepsTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/forearmTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/shirtSleeveTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/rightFistTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/leftFistTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/elbowHeightTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/bodyHeightTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.maschion.camisaria.widget.InputMeasureClientCustomView
+        <com.maschion.camisaria.ui.InputMeasureClientComponent
             android:id="@+id/armpitsTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
