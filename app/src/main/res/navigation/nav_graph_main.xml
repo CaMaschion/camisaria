@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.maschion.camisaria.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_clientFragment"
+            app:destination="@id/clientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientFragment"
+        android:name="ClientFragment"
+        android:label="ClientFragment"
+        tools:layout="@layout/fragment_client">
+        <action
+            android:id="@+id/action_clientFragment_to_measureFragment"
+            app:destination="@id/measureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/measureFragment"
+        android:name="com.maschion.camisaria.shirt.presentation.MeasureFragment"
+        android:label="MeasureFragment"
+        tools:layout="@layout/fragment_measures">
+        <action
+            android:id="@+id/action_measureFragment_to_shirtDetailsFragment"
+            app:destination="@id/shirtDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shirtDetailsFragment"
+        android:name="com.maschion.camisaria.shirt.presentation.ShirtDetailsFragment"
+        android:label="ShirtDetailsFragment"
+        tools:layout="@layout/fragment_shirt_details">
+        <action
+            android:id="@+id/action_shirtDetailsFragment_to_resumeFragment"
+            app:destination="@id/resumeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resumeFragment"
+        android:name="com.maschion.camisaria.resume.presentation.ResumeFragment"
+        android:label="ResumeFragment"
+        tools:layout="@layout/fragment_resume">
+        <action
+            android:id="@+id/action_resumeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

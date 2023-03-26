@@ -3,10 +3,7 @@ package com.maschion.camisaria
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.fragment.app.commit
-import androidx.fragment.app.replace
 import com.maschion.camisaria.databinding.ActivityMainBinding
-import com.maschion.camisaria.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,14 +16,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         installSplashScreen()
 
-
-        if (savedInstanceState == null) {
-
-            supportFragmentManager.commit {
-                setReorderingAllowed(true)
-                replace<HomeFragment>(R.id.fragmentContainerView)
-            }
-
-        }
     }
 }

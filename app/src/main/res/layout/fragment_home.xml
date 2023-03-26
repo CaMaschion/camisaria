@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:context=".MainActivity"
-        tools:listitem="@layout/res_item_client_info_view" />
+        tools:listitem="@layout/rv_client_view" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addClient"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_24"
         android:adjustViewBounds="true"
-        android:backgroundTint="@color/light_purple"
+        android:backgroundTint="@color/black"
         android:clickable="true"
         android:contentDescription="@string/btn_add_client"
         android:elevation="@dimen/dimen_5"
