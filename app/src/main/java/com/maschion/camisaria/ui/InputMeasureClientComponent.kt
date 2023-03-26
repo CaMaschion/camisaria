@@ -1,21 +1,19 @@
 package com.maschion.camisaria.ui
 
 import android.content.Context
-import android.text.Editable
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.widget.EditText
 import android.widget.LinearLayout
 import androidx.core.widget.addTextChangedListener
 import com.maschion.camisaria.R
-import com.maschion.camisaria.databinding.MeasurementChartCustomviewBinding
+import com.maschion.camisaria.databinding.MeasurementCustomviewBinding
 
 class InputMeasureClientComponent(
     context: Context, attrs: AttributeSet
 ) : LinearLayout(context, attrs) {
 
-    private val binding: MeasurementChartCustomviewBinding =
-        MeasurementChartCustomviewBinding.inflate(
+    private val binding: MeasurementCustomviewBinding =
+        MeasurementCustomviewBinding.inflate(
             LayoutInflater.from(context), this, true
         )
 
@@ -27,7 +25,7 @@ class InputMeasureClientComponent(
 
     }
 
-    fun addListener(measureCallback: (String) -> Unit, extraMeasureCallback: (String) -> Unit){
+    fun addListener(measureCallback : (String) -> Unit, extraMeasureCallback: (String) -> Unit){
 
         this.binding.editTextMeasure.addTextChangedListener {
             measureCallback(it.toString())
@@ -39,10 +37,8 @@ class InputMeasureClientComponent(
 
     }
 
-    fun setupCustomView(label: String, measure: String, extraMeasure: String) {
+    fun setupCustomView(label: String) {
         this.binding.measuresChart.text = label
-        this.binding.editTextMeasure.setText(measure)
-        this.binding.editTexAdd.setText(extraMeasure)
 
     }
 

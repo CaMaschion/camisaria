@@ -5,6 +5,9 @@
     <string name="local_service">São Paulo</string>
     <string name="btn_add_client">botão para adicionar novo cliente</string>
 
+    <string name="measure_header">medidas</string>
+    <string name="measure_add_header">acréscimos</string>
+
     <string name="collarTextMeasure">Colarinho</string>
     <string name="shoulderTextMeasure">Ombro</string>
     <string name="betweenShoulderTextMeasure">Pala</string>
@@ -21,5 +24,11 @@
     <string name="elbowHeightTextMeasure">Altura do cotovelo</string>
     <string name="bodyHeightTextMeasure">Altura do corpo</string>
     <string name="armpitsTextMeasure">Entracavas</string>
+
+<!--    Bolso-->
+    <string name="header_pocket">Bolsos</string>
+    <string name="with_pocket">Com bolsos</string>
+    <string name="without_pocket">Sem bolsos</string>
+    <string name="two_pocket">Dois bolsos</string>
 
 </resources>

@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.maschion.camisaria.client.model.ClientItem
-import com.maschion.camisaria.databinding.ResItemClientInfoViewBinding
+import com.maschion.camisaria.databinding.RvClientViewBinding
 
 class ClientAdapter(
     private val clientItem: List<ClientItem>,
@@ -15,7 +15,7 @@ class ClientAdapter(
     Unit
 ) : RecyclerView.Adapter<ClientAdapter.ViewHolder>() {
 
-    inner class ViewHolder(itemView: ResItemClientInfoViewBinding) :
+    inner class ViewHolder(itemView: RvClientViewBinding) :
         RecyclerView.ViewHolder(itemView.root) {
         private val clientText: TextView = itemView.clientName
         private val dateServiceText: TextView = itemView.dateServiceText
@@ -33,7 +33,7 @@ class ClientAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            ResItemClientInfoViewBinding.inflate(
+            RvClientViewBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false

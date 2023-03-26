@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.maschion.camisaria.ui.HeaderComponent
+        android:id="@+id/pocket_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pocket_header">
+
+        <RadioButton
+            android:id="@+id/with_pocket"
+            android:checked="true"
+            style="@style/Group.Radius"
+            android:text="Com bolso" />
+
+        <RadioButton
+            android:id="@+id/without_pocket"
+            android:checked="false"
+            style="@style/Group.Radius"
+            android:text="Sem bolso" />
+
+        <RadioButton
+            android:id="@+id/two_pocket"
+            style="@style/Group.Radius"
+            android:text="Dois bolsos" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
